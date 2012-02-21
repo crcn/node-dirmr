@@ -1,5 +1,9 @@
 ## Merges directories together
 
+## Motivation
+
+- Used in [mesh](/crcn/mesh).
+- Bootstrapping libraries
  
 
  Example
