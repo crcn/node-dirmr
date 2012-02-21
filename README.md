@@ -28,7 +28,7 @@ join(__dirname + "/lib");
 
 ### .join(output)
 
-Joins the target directories to the output folder
+Joins (merges) the target directories to the output folder
 
 ### .readdir(directory, filter)
 
