@@ -38,7 +38,7 @@ Scans the given directory for dirs to merge
 
 ```javascript
 dirmr().
-readdir(__dirname + "/src", ["node", "web"]).
+readdir(__dirname + "/src",/^(node|web)$/).
 join(__dirname + "/lib");
 ```
 
@@ -49,8 +49,11 @@ Copies target directories to output directory without merging
 
 ```javascript
 mergedir().
-readdir(__dirname + "/src", ["node", "web"]).
-copyEach(__dirname + "/bootstrap");
+readdir(__dirname + "/src", /^(node|web)$/).
+copyEach(__dirname + "/bootstrap").
+complete(function(err, result) {
+	
+})
 ```
 
 ### .filterFile(fn)
@@ -59,7 +62,7 @@ Filters files before they're copied
 
 ```javascript
 dirmr().
-readdir(__dirname + "/src", ["node", "web"]).
+readdir(__dirname + "/src").
 filterFile(function(options, next) {
 	
 	if(!/\.tpl\.\w+/.test(options.name)) return;
@@ -69,5 +72,9 @@ filterFile(function(options, next) {
 }).
 join(__dirname + "/lib");
 ```
+
+### .complete(callback)
+
+Called once the operations are complete
 
 
