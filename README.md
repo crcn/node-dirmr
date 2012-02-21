@@ -5,10 +5,10 @@
  Example
 
 ```javascript
-dirmr = require('dirmr');
+var dirmr = require('dirmr');
 
-mergedir().
-dirmr(__dirname + "/src", ["node", "web"]).
+dirmr().
+readdir(__dirname + "/src", ["node", "web"]).
 join(__dirname + "/lib");
 
 
