@@ -23,6 +23,7 @@ readdir(__dirname + "/src", /^(node|web)$/).
 filterFile(/\.tpl.\w+/, function(options, next) {
 	
 	fs.readFile(options.source, "utf8", function(err, content) {
+		
 		if(err) return next(err);	
 		
 		fs.writeFile(options.destination.replace(".tpl", ""), mu.to_html(content, tplData), next);
@@ -32,7 +33,12 @@ filterFile(/\.tpl.\w+/, function(options, next) {
 }).
 
 //copy all the files in the library directory
-join(__dirname + "/lib"); //copy the filtered dirs to this directory
+join(__dirname + "/lib"). 
+
+//called after all files have been copied
+complete(function(err, result) {
+	
+});
 ```
 
 
