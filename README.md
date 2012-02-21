@@ -9,10 +9,23 @@
 ## Example
 
 ```javascript
-var dirmr = require('dirmr');
+var dirmr = require('dirmr'),
+fs        = require("fs"),
+mu        = require("mustache"),
+tplData   = {};
 
 dirmr().
 readdir(__dirname + "/src", /^(node|web)$/). //read the bootstrap directory for the target dirs
+filterFile(/\.tpl.\w+/, function(options, next) {
+	
+	fs.readFile(options.source, "utf8", function(err, content) {
+		if(err) return next(err);	
+		
+		fs.writeFile(options.destination, mu.to_html(content, tplData), next);
+		
+	});
+
+}).
 join(__dirname + "/lib"); //copy the filtered dirs to this directory
 ```
 
@@ -56,7 +69,7 @@ complete(function(err, result) {
 })
 ```
 
-### .filterFile(fn)
+### .filterFile(search, fn)
 
 Filters files before they're copied
 
