@@ -19,18 +19,8 @@ dirmr().
 //read the bootstrap directory for the target dirs
 readdir(__dirname + "/src", /^(node|web)$/). 
 
-//filter through template files, and fill them
-filterFile(/\.tpl.\w+/, function(options, next) {
-	
-	fs.readFile(options.source, "utf8", function(err, content) {
-
-		if(err) return next(err);	
-		
-		fs.writeFile(options.destination.replace(".tpl", ""), mu.to_html(content, tplData), next);
-
-	});
-
-}).
+//filter through template files, and fill them - examples are: .mu.html, .ejs.html, .mu.json
+filterFile(dirmr.parseTemplate(tplData)).
 
 //copy all the files to the library directory
 join(__dirname + "/lib"). 
@@ -81,6 +71,10 @@ complete(function(err, result) {
 })
 ```
 
+### .sort(fn)
+
+Sorts the directories
+
 ### .filterFile(search, fn)
 
 Filters files before they're copied
@@ -101,5 +95,28 @@ join(__dirname + "/lib");
 ### .complete(callback)
 
 Called once the operations are complete
+
+### exports.mergeJSON(repl, obj)
+
+merges JSON files as they're copied to the target directory
+
+```javascript
+dirmr().
+readdir(__dirname + "/src").
+filterFile(/.merge.json/, dirmr.mergeJSON(".json", { name: 'blah' })).
+join(__dirname + "/lib");
+```
+
+### exports.parseTemplate(data)
+
+Searches for template files, and replaces content with the data given.
+supported templates: [mu](http://mustache.github.com/), [ejs](http://embeddedjs.com/)
+
+```javascript
+dirmr().
+readdir(__dirname + "/src").
+filterFile(dirmr.parseTemplate({ name: 'my-app', version: '0.0.10' })).
+join(__dirname + "/lib");
+```
 
 
