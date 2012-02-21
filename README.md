@@ -6,7 +6,7 @@
 - Bootstrapping libraries
  
 
- Example
+## Example
 
 ```javascript
 var dirmr = require('dirmr');
