@@ -14,8 +14,6 @@ var dirmr = require('dirmr');
 dirmr().
 readdir(__dirname + "/src", ["node", "web"]).
 join(__dirname + "/lib");
-
-
 ```
 
 
