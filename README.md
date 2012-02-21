@@ -15,17 +15,23 @@ mu        = require("mustache"),
 tplData   = {};
 
 dirmr().
-readdir(__dirname + "/src", /^(node|web)$/). //read the bootstrap directory for the target dirs
+
+//read the bootstrap directory for the target dirs
+readdir(__dirname + "/src", /^(node|web)$/). 
+
+//filter through template files, and fill them
 filterFile(/\.tpl.\w+/, function(options, next) {
 	
 	fs.readFile(options.source, "utf8", function(err, content) {
 		if(err) return next(err);	
 		
-		fs.writeFile(options.destination, mu.to_html(content, tplData), next);
-		
+		fs.writeFile(options.destination.replace(".tpl", ""), mu.to_html(content, tplData), next);
+
 	});
 
 }).
+
+//copy all the files in the library directory
 join(__dirname + "/lib"); //copy the filtered dirs to this directory
 ```
 
