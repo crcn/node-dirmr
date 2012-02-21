@@ -12,8 +12,8 @@
 var dirmr = require('dirmr');
 
 dirmr().
-readdir(__dirname + "/src", ["node", "web"]).
-join(__dirname + "/lib");
+readdir(__dirname + "/src", /^(node|web)$/). //read the bootstrap directory for the target dirs
+join(__dirname + "/lib"); //copy the filtered dirs to this directory
 ```
 
 
@@ -28,7 +28,7 @@ dirmr([__dirname + "/src/node", __dirname + "/src/web"]).
 join(__dirname + "/lib");
 ```
 
-### .join(output)
+### .join(directory)
 
 Joins (merges) the target directories to the output folder
 
