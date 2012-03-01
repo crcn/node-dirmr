@@ -35,7 +35,15 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 3131,
+				"buffer_size": 3485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin 8Rzc3P.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +67,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 422,
+				"buffer_size": 379,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +75,14 @@
 			"file": "lib/mergeJSON.js",
 			"settings":
 			{
-				"buffer_size": 725,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +90,7 @@
 			"file": "lib/parseTemplate.js",
 			"settings":
 			{
-				"buffer_size": 839,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -84,6 +99,14 @@
 			"settings":
 			{
 				"buffer_size": 102,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin LgfOhG.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -257,6 +280,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"onComplete",
+			"_onComplete",
+			"_seq.",
+			"copyDirs",
+			"mkdir",
+			"copyDirs",
+			"copyD",
 			"readd",
 			"_walkr.filt",
 			"forEach",
@@ -377,8 +407,7 @@
 			"onSubscriptionInfo",
 			"login",
 			"getToken",
-			"args",
-			"--all"
+			"args"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -396,7 +425,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -456,29 +485,56 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 3131,
+						"buffer_size": 3485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3130,
-								3130
+								2168,
+								2168
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2864.0,
+						"translation.y": 1982.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "/tmp/subl stdin 8Rzc3P.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "lib/template.js",
 					"settings":
 					{
@@ -504,7 +560,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "lib/mergeDir.js",
 					"settings":
 					{
@@ -530,19 +586,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 422,
+						"buffer_size": 379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								389,
-								389
+								276,
+								275
 							]
 						],
 						"settings":
@@ -558,50 +614,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "lib/mergeJSON.js",
 					"settings":
 					{
-						"buffer_size": 725,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								62,
-								62
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "lib/parseTemplate.js",
-					"settings":
-					{
-						"buffer_size": 839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								790,
-								790
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -611,6 +642,59 @@
 				},
 				{
 					"buffer": 8,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/Users/craig/Dropbox/Developer/Public/walkr/lib",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "lib/parseTemplate.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
 					"file": ".cupboard",
 					"settings":
 					{
@@ -623,6 +707,32 @@
 							[
 								102,
 								102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/tmp/subl stdin LgfOhG.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
