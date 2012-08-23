@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/crcn/node-dirmr.png)](http://travis-ci.org/crcn/node-dirmr)
 ## Merges directories together
 
 ## Motivation
