@@ -2,17 +2,21 @@
   "author": "Craig Condon",
   "name": "dirmr",
   "description": "Directory merging & manipulation",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/crcn/node-dirmr.git"
   },
   "main": "./lib/index.js",
   "dependencies": {
-    "seq":"0.3.x",
-    "walkr":"0.0.x",
-    "mkdirp":"0.3.x",
-    "structr":"0.1.x"
+    "seq": "0.3.x",
+    "walkr": "0.0.x",
+    "mkdirp": "0.3.x",
+    "structr": "0.1.x",
+    "ejs": "0.6.x",
+    "mustache": "0.4.x",
+    "underscore": "1.4.x",
+    "toarray": "0.0.x"
   },
   "devDependencies": {}
 }

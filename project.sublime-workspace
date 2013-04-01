@@ -35,7 +35,7 @@
 			"file": "lib/index.js",
 			"settings":
 			{
-				"buffer_size": 3485,
+				"buffer_size": 3916,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +67,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 379,
+				"buffer_size": 455,
 				"line_ending": "Unix"
 			}
 		},
@@ -280,6 +280,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_targetDirs =",
+			"onComplete",
+			"_onComplete",
+			"_onComplte",
+			".complete",
+			"complete",
+			"copyDirs",
 			"onComplete",
 			"_onComplete",
 			"_seq.",
@@ -400,14 +407,7 @@
 			"beans",
 			"groupId",
 			"getSavedArticles",
-			"notifySubscribers",
-			"trySending",
-			"updateSubscriptionInfo",
-			"trySending",
-			"onSubscriptionInfo",
-			"login",
-			"getToken",
-			"args"
+			"notifySubscribers"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -485,15 +485,15 @@
 					"file": "lib/index.js",
 					"settings":
 					{
-						"buffer_size": 3485,
+						"buffer_size": 3916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2168,
-								2168
+								1942,
+								1942
 							]
 						],
 						"settings":
@@ -502,7 +502,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1982.0,
+						"translation.y": 5135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -590,15 +590,15 @@
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 379,
+						"buffer_size": 455,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								275
+								0,
+								0
 							]
 						],
 						"settings":
